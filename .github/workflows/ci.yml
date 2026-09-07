@@ -52,9 +52,10 @@ jobs:
       - name: Install Bicep
         run: |
           curl --fail --silent --show-error --location \
-            --output /usr/local/bin/bicep \
+            --output "$RUNNER_TEMP/bicep" \
             https://github.com/Azure/bicep/releases/download/v0.46.1/bicep-linux-x64
-          chmod +x /usr/local/bin/bicep
+          chmod +x "$RUNNER_TEMP/bicep"
+          echo "$RUNNER_TEMP" >> "$GITHUB_PATH"
       - run: bicep build infra/azure/main.bicep --stdout > /dev/null
 
   container:
