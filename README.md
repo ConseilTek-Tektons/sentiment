@@ -9,7 +9,9 @@
 [![CodeQL](https://github.com/ConseilTek-Tektons/sentiment/actions/workflows/codeql.yml/badge.svg)](https://github.com/ConseilTek-Tektons/sentiment/actions/workflows/codeql.yml)
 [![License](https://img.shields.io/badge/license-Apache--2.0-a3ff12)](LICENSE)
 
-Sentiment is a deployable ConseilTek reference application for engagement surveys, performance cycles, goals, action plans, and people insights. It demonstrates a practical privacy boundary: directory identity and pseudonymous survey responses live in separate PostgreSQL schemas, while cohort anonymity is re-applied at query time.
+People analytics is useful only when employees can trust how their answers are handled. ConseilTek built Sentiment to help People teams understand engagement, manage review cycles, and turn feedback into visible action without treating privacy as an afterthought. Identity and pseudonymous survey responses live in separate PostgreSQL schemas, and cohort anonymity is checked again whenever a query runs.
+
+This repository contains the working application behind that approach: authenticated workflows, privacy-aware APIs, migrations, tests, local enterprise identity, container packaging, and validated infrastructure for AWS and Azure.
 
 ![Sentiment application architecture](docs/architecture/application-flow.svg)
 
@@ -97,3 +99,7 @@ docs/architecture/       editable SVG architecture diagrams
 ## License
 
 Apache 2.0. See [LICENSE](LICENSE). ConseilTek trademarks and supplied brand artwork remain the property of ConseilTek.
+
+## Ownership and stewardship
+
+Sentiment is designed, built, and maintained by [ConseilTek](https://conseiltek.com). It is published through the ConseilTek Tektons organization as part of our open engineering portfolio. Questions, responsible security reports, and partnership inquiries can be sent to [support@conseiltek.com](mailto:support@conseiltek.com).

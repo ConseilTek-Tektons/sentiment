@@ -3,6 +3,19 @@
   "version": "0.2.0",
   "private": true,
   "description": "Self-hosted engagement and performance analytics with auditable anonymity, enterprise SSO, RBAC, and AI insights.",
+  "author": {
+    "name": "ConseilTek",
+    "email": "support@conseiltek.com",
+    "url": "https://conseiltek.com"
+  },
+  "homepage": "https://conseiltek.com/techtons/sentiment",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ConseilTek-Tektons/sentiment.git"
+  },
+  "bugs": {
+    "url": "https://github.com/ConseilTek-Tektons/sentiment/issues"
+  },
   "license": "Apache-2.0",
   "engines": {
     "node": ">=22.0.0"
