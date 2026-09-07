@@ -1,0 +1,48 @@
+{
+  "name": "sentiment",
+  "version": "0.2.0",
+  "private": true,
+  "description": "Self-hosted engagement and performance analytics with auditable anonymity, enterprise SSO, RBAC, and AI insights.",
+  "license": "Apache-2.0",
+  "engines": {
+    "node": ">=22.0.0"
+  },
+  "packageManager": "pnpm@11.19.0",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint . --max-warnings=0",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "check": "pnpm lint && pnpm typecheck && pnpm test && pnpm build",
+    "db:migrate": "node scripts/migrate.mjs",
+    "db:seed": "node scripts/seed.mjs",
+    "knowledge:ingest": "node scripts/ingest-knowledge.mjs"
+  },
+  "dependencies": {
+    "ioredis": "^5.8.1",
+    "lucide-react": "^1.41.0",
+    "next": "15.5.9",
+    "next-auth": "4.24.15",
+    "openai": "^7.10.0",
+    "postgres": "^3.4.7",
+    "react": "19.1.0",
+    "react-dom": "19.1.0",
+    "recharts": "^3.10.1",
+    "sharp": "0.35.4",
+    "zod": "^4.5.4"
+  },
+  "devDependencies": {
+    "@eslint/eslintrc": "^3",
+    "@tailwindcss/postcss": "^4",
+    "@types/node": "^20",
+    "@types/react": "^19",
+    "@types/react-dom": "^19",
+    "eslint": "^9",
+    "eslint-config-next": "15.5.9",
+    "tailwindcss": "^4",
+    "typescript": "^5",
+    "vitest": "^3.2.4"
+  }
+}

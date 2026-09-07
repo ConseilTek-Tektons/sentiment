@@ -1,0 +1,30 @@
+{
+  "realm": "sentiment",
+  "enabled": true,
+  "displayName": "Sentiment local identity broker",
+  "registrationAllowed": false,
+  "loginWithEmailAllowed": true,
+  "clients": [
+    {
+      "clientId": "sentiment-web",
+      "name": "Sentiment Web",
+      "enabled": true,
+      "clientAuthenticatorType": "client-secret",
+      "secret": "local-dev-secret",
+      "standardFlowEnabled": true,
+      "directAccessGrantsEnabled": false,
+      "redirectUris": ["http://localhost:3000/api/auth/callback/enterprise-sso"],
+      "webOrigins": ["http://localhost:3000"],
+      "protocol": "openid-connect",
+      "defaultClientScopes": ["web-origins", "acr", "roles", "profile", "email", "groups"]
+    }
+  ],
+  "groups": [
+    { "name": "sentiment-owners" },
+    { "name": "people-operations" },
+    { "name": "people-partners" },
+    { "name": "people-managers" },
+    { "name": "people-analytics" },
+    { "name": "all-employees" }
+  ]
+}

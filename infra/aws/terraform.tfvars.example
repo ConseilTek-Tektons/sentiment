@@ -1,0 +1,17 @@
+application_name  = "sentiment"
+environment       = "production"
+aws_region        = "us-east-1"
+container_image   = "123456789012.dkr.ecr.us-east-1.amazonaws.com/sentiment:2026.09.0"
+database_name     = "sentiment"
+database_username = "sentiment_app"
+
+oidc_issuer            = "https://example.okta.com/oauth2/default"
+oidc_client_id         = "sentiment-production"
+oidc_client_secret_arn = "arn:aws:secretsmanager:us-east-1:123456789012:secret:sentiment-oidc"
+
+openai_api_key_secret_arn = "arn:aws:secretsmanager:us-east-1:123456789012:secret:sentiment-openai"
+openai_vector_store_id     = "vs_replace_me"
+
+protect_data  = true
+aurora_min_acu = 0.5
+aurora_max_acu = 8
