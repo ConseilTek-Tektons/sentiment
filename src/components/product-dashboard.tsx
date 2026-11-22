@@ -69,9 +69,9 @@ export function ProductDashboard({ roles }: { roles: string[] }) {
                 <CartesianGrid stroke="#292929" horizontal={false} />
                 <XAxis type="number" domain={[0, 100]} stroke="#666" fontSize={9} />
                 <YAxis type="category" dataKey="name" width={72} stroke="#999" fontSize={10} tickLine={false} axisLine={false} />
-                <Tooltip contentStyle={{ background: "#171717", border: "1px solid #333", borderRadius: 6, fontSize: 11 }} />
+                <Tooltip contentStyle={{ background: "#ffffff", border: "1px solid #d8d9d4", borderRadius: 6, fontSize: 11 }} />
                 <Bar dataKey="previous" fill="#343434" radius={[0, 3, 3, 0]} barSize={8} />
-                <Bar dataKey="current" fill="#a3ff12" radius={[0, 3, 3, 0]} barSize={8} />
+                <Bar dataKey="current" fill="#222c62" radius={[0, 3, 3, 0]} barSize={8} />
               </BarChart>
             </ResponsiveContainer>
           </div>

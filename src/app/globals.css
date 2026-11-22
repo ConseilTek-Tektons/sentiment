@@ -338,3 +338,58 @@ a { color: inherit; text-decoration: none; }
 .action-plan > p { color: var(--muted); font-size: 10px; line-height: 1.55; }
 .action-plan > button { padding: 0; border: 0; background: transparent; color: var(--lime); display: flex; align-items: center; gap: 5px; font-size: 9px; cursor: pointer; }
 @media (max-width: 780px) { .lower-grid { grid-template-columns: 1fr; } }
+
+/* ConseilTek editorial brand system — aligned with conseiltek.com */
+:root { --bg:#f5f5f2; --bg-elevated:#fff; --bg-soft:#eeeef0; --panel:#fff; --line:#deded8; --line-strong:#c8c9c4; --fg:#141414; --muted:#5f625f; --dim:#7d807c; --lime:#222c62; --lime-soft:rgba(34,44,98,.08); --violet:#5262a3; --cyan:#4c6c7a; --warning:#9b621a; --danger:#a13e45; }
+html { color-scheme:light; background:var(--bg); }
+body { background-color:var(--bg); background-image:linear-gradient(rgba(34,44,98,.055) 1px,transparent 1px),linear-gradient(90deg,rgba(34,44,98,.055) 1px,transparent 1px); background-size:56px 56px; }
+::selection { background:var(--lime); color:#fff; }
+.landing-shell,.app-frame { background:transparent; }
+.landing-grid { inset:0; background-image:linear-gradient(rgba(34,44,98,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(34,44,98,.06) 1px,transparent 1px); background-size:56px 56px; mask-image:none; }
+.landing-copy { background:transparent; }
+.brand-lockup { color:var(--dim); }
+.brand-lockup img { width:184px; height:auto; }
+.eyebrow span { background:var(--lime); box-shadow:none; }
+.capability-row span,.truth-card { background:rgba(255,255,255,.78); color:var(--fg); box-shadow:0 16px 50px rgba(20,20,20,.04); }
+.sign-in-panel { background:rgba(255,255,255,.92); box-shadow:-24px 0 70px rgba(20,20,20,.08); }
+.primary-button,.primary-action { background:var(--lime); border-color:var(--lime); color:#fff; }
+.primary-button:hover,.primary-action:hover { background:#18204b; }
+.secondary-button { background:#fff; }
+.secondary-button:hover { border-color:#a8aaa5; background:#f8f8f5; }
+.persona { background:#fff; }
+.persona:hover { border-color:#a8aaa5; background:#fafaf7; }
+.avatar { background:#eef0f7; border-color:#d5d8e6; color:var(--lime); }
+.configuration-note { color:#75501f; }
+.sidebar { background:rgba(250,250,247,.96); }
+.app-brand { height:82px; padding-top:6px; flex-direction:column; align-items:flex-start; justify-content:center; gap:9px; }
+.app-brand img { width:154px; height:auto; }
+.app-brand strong { font-size:14px; }
+.app-brand small { letter-spacing:.1em; text-transform:uppercase; }
+.nav-item { border-radius:3px; }
+.nav-item.active { border-color:rgba(34,44,98,.16); }
+.nav-item small,.host-pill>span { background:#ecece8; border-color:#d8d8d2; color:#4d504d; }
+.nav-dot { background:#9b9e99; }
+.topbar { background:rgba(245,245,242,.9); }
+.status-dot { box-shadow:none; }
+.global-search,.quiet-chip,.table-tools label { background:rgba(255,255,255,.9); }
+.assistant-trigger { border-color:rgba(34,44,98,.28); background:rgba(34,44,98,.08); color:var(--lime); }
+.assistant-trigger:hover { background:rgba(34,44,98,.14); }
+.notice { border-color:rgba(34,44,98,.2); color:var(--lime); }
+.metric-card,.surface { border-radius:4px; box-shadow:0 12px 40px rgba(20,20,20,.035); }
+.metric-card.featured { background:linear-gradient(150deg,rgba(34,44,98,.075),transparent 55%),var(--panel); }
+.progress-track,.action-progress { background:#ecece8; }
+.insight-card { border-color:rgba(34,44,98,.22); background:linear-gradient(145deg,rgba(34,44,98,.075),rgba(255,255,255,.9)); }
+.insight-icon,.insight-card button { color:var(--lime); border-color:rgba(34,44,98,.2); }
+.assistant-panel { background:#fff; box-shadow:-24px 0 70px rgba(20,20,20,.18); }
+.assistant-icon { color:var(--lime); background:var(--lime-soft); border-color:rgba(34,44,98,.2); }
+.message.assistant p { color:var(--fg); }
+.assistant-composer button { background:var(--lime); }
+.access-matrix thead th { background:#f3f3ef; }
+.permission-toggle { background:#fff; }
+.permission-toggle.enabled { border-color:rgba(34,44,98,.4); }
+.modal-backdrop { background:rgba(20,20,20,.45); }
+.modal { background:#fff; box-shadow:0 28px 100px rgba(20,20,20,.22); }
+.modal input,.modal select { background:#fff; }
+.route-preview { border-color:rgba(34,44,98,.2); background:rgba(34,44,98,.06); color:var(--lime); }
+.route-preview strong { color:var(--fg); }
+.draft-note code { color:#75501f; }

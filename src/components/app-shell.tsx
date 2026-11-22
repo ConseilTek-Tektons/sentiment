@@ -34,7 +34,7 @@ export function AppShell({ user, children }: { user: UserSummary; children: Reac
     <div className="app-frame">
       <aside className="sidebar">
         <Link className="app-brand" href="/">
-          <Image src="/brand/mark.png" alt="ConseilTek" width={61} height={26} priority />
+          <Image src="/brand/logo.png" alt="ConseilTek" width={154} height={18} priority />
           <span><strong>{product.name}</strong><small>by ConseilTek</small></span>
         </Link>
         <nav className="primary-nav" aria-label="Application">

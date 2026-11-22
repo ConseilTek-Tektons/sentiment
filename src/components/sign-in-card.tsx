@@ -20,7 +20,7 @@ export function SignInCard({ demoEnabled, enterpriseEnabled }: { demoEnabled: bo
       <div className="landing-grid" aria-hidden="true" />
       <section className="landing-copy">
         <a className="brand-lockup" href="https://conseiltek.com" aria-label="ConseilTek home">
-          <Image src="/brand/mark.png" width={72} height={31} alt="ConseilTek" priority />
+          <Image src="/brand/logo.png" width={184} height={22} alt="ConseilTek" priority />
           <span>TECHTONS / {product.name.toUpperCase()}</span>
         </a>
         <div className="eyebrow"><span /> OWNED SOFTWARE · AI NATIVE</div>

@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public/brand/mark-light.png" alt="ConseilTek" width="120" />
+  <img src="public/brand/logo.png" alt="ConseilTek" width="180" />
   <h1>Sentiment</h1>
   <p><strong>Privacy-conscious engagement, performance, and action planning.</strong></p>
   <p>Enterprise SSO · feature-level RBAC · query-time anonymity · PostgreSQL · grounded AI · AWS and Azure IaC</p>
@@ -7,7 +7,7 @@
 
 [![CI](https://github.com/ConseilTek-Tektons/sentiment/actions/workflows/ci.yml/badge.svg)](https://github.com/ConseilTek-Tektons/sentiment/actions/workflows/ci.yml)
 [![CodeQL](https://github.com/ConseilTek-Tektons/sentiment/actions/workflows/codeql.yml/badge.svg)](https://github.com/ConseilTek-Tektons/sentiment/actions/workflows/codeql.yml)
-[![License](https://img.shields.io/badge/license-Apache--2.0-a3ff12)](LICENSE)
+[![License](https://img.shields.io/badge/license-Apache--2.0-222c62)](LICENSE)
 
 People analytics is useful only when employees can trust how their answers are handled. ConseilTek built Sentiment to help People teams understand engagement, manage review cycles, and turn feedback into visible action without treating privacy as an afterthought. Identity and pseudonymous survey responses live in separate PostgreSQL schemas, and cohort anonymity is checked again whenever a query runs.
 
